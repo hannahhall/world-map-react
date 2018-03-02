@@ -4,9 +4,11 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
+import { Login } from './components/Login/Login';
 
 export default class App extends Component {
   displayName = App.name
+  
 
   render() {
     return (
@@ -14,6 +16,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetchdata' component={FetchData} />
+        <Route path='/login' component={Login} />
       </Layout>
     );
   }

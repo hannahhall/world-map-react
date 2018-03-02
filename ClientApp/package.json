@@ -1,9 +1,10 @@
 {
-  "name": "WorldMapApi",
+  "name": "world_map_api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "axios": "^0.14.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",

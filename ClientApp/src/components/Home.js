@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 
 export class Home extends Component {
   displayName = Home.name
+  constructor() {
+    super();
+    const storage = localStorage.getItem("token");
+    if (storage) {
+      this.setState({ token: JSON.parse(storage) });
+      return;
+    }
+  }
 
   render() {
     return (
